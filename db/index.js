@@ -14,8 +14,7 @@ class DB {
       // YOUR NEED TO USE LEFT JOINS TO JOIN THREE TABLES
       // TODO: YOUR CODE HERE
 
-      'SELECT employee.id, employee.first_name, employee.last_name, department.name, role.salary FROM employee LEFT JOIN department LEFT JOIN role ON role.id = employee.role_id LEFT JOIN department ON department.id = role.department_id'
-
+      'SELECT employee.id, employee.first_name, employee.last_name, department.name, role.salary FROM employee LEFT JOIN role ON role.id = employee.role_id LEFT JOIN department ON department.id = role.department_id'
     );
   }
 
@@ -59,7 +58,7 @@ class DB {
       // YOU NEED TO USE LEFT JOIN TO JOIN role and department TABLES
       // TODO: YOUR CODE HERE
 
-      'SELECT role.id, department.name FROM role LEFT JOIN department ON role.department_id = department.id'
+      'SELECT role.id, role.title, role.salary, department.name FROM role LEFT JOIN department ON role.department_id = department.id'
 
     );
   }

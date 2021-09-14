@@ -283,9 +283,7 @@ async function addEmployee() {
     type: "list",
     name: "roleId",
     message: "What is the employee's role?",
-    choices: [{name: "a",
-      value: "b"
-    }]
+    choices: roleChoices,
   });
 
   employee.role_id = roleId;
